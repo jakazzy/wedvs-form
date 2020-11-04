@@ -42,17 +42,17 @@ function StepForm() {
     switch(step){
         case 1: 
         return (
-            <UserProfile next={next}  handleChange={handleChange}/>
+            <UserProfile next={next}  handleChange={handleChange} userData={userData}/>
         )
         case 2:
-            return(<UserAddress next={next} previous={previous} handleChange={handleChange} userDate={userData}/>)
+            return(<UserAddress next={next} previous={previous} handleChange={handleChange} userData={userData}/>)
         case 3:
-            return(<UserExperience next={next} previous={previous} handleChange={handleChange}/>)
+            return(<UserExperience next={next} previous={previous} handleChange={handleChange} userData={userData} />)
         case 4:
-            return(<UserConfirmationData previous={previous} handleChange={handleChange}/>);
+            return(<UserConfirmationData previous={previous} handleChange={handleChange} userData={userData} />);
         default:
             return (
-                <UserProfile next={next}  handleChange={handleChange}/>
+                <UserProfile next={next}  handleChange={handleChange} userData={userData}/>
             )
     }
 }
