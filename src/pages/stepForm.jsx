@@ -34,25 +34,25 @@ function StepForm() {
         setUserData( {...userData, step: newStep })
     }
 
-    const handleChange=(e)=>{
-        setUserData({...userData, [e.target.name]: e.target.value })
+    const submitData=(data)=>{
+        setUserData({...userData, ...data})
     }
 
     const { step } = userData
     switch(step){
         case 1: 
         return (
-            <UserProfile next={next}  handleChange={handleChange} userData={userData}/>
+            <UserProfile next={next}  submitData={submitData} userData={userData}/>
         )
         case 2:
-            return(<UserAddress next={next} previous={previous} handleChange={handleChange} userData={userData}/>)
+            return(<UserAddress next={next} previous={previous} submitData={submitData} userData={userData}/>)
         case 3:
-            return(<UserExperience next={next} previous={previous} handleChange={handleChange} userData={userData} />)
+            return(<UserExperience next={next} previous={previous} submitData={submitData} userData={userData} />)
         case 4:
-            return(<UserConfirmationData previous={previous} handleChange={handleChange} userData={userData} />);
+            return(<UserConfirmationData previous={previous} submitData={submitData} userData={userData} />);
         default:
             return (
-                <UserProfile next={next}  handleChange={handleChange} userData={userData}/>
+                <UserProfile next={next}  submitData={submitData} userData={userData}/>
             )
     }
 }

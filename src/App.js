@@ -1,4 +1,4 @@
-import StepForm from "./components/stepForm";
+import StepForm from "./pages/stepForm";
 import "./App.css";
 
 function App() {

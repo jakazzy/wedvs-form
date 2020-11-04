@@ -1,8 +1,8 @@
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Form from 'react-bootstrap/Form';
+import PageTemplate from '../components/page_template.component';
 
-function UserExperience({next, previous, handleChange, userData}) {
+function UserExperience({next, previous, submitData, userData}) {
 
     const continueStep=(e)=>{
         e.preventDefault();
@@ -15,10 +15,8 @@ function UserExperience({next, previous, handleChange, userData}) {
        }
 
     return (
-        <Card style={{ width: "60vw", height: "65vh", margin: "5rem auto" }}>
-          <Card.Body>
-            {/*  form */}
-            <Form >
+       <PageTemplate userData={userData}>
+           <Form >
                 <Form.Group controlId="experience">
                     <Form.Label>Experience</Form.Label>
                     <Form.Control type="text" placeholder="Enter years of software experience" />
@@ -37,9 +35,7 @@ function UserExperience({next, previous, handleChange, userData}) {
                 <Button variant="primary" onClick={goBack }>Previous</Button>
                 <Button variant="primary" onClick={continueStep }>Continue</Button>
             </Form>
-    
-          </Card.Body>
-        </Card>
+       </PageTemplate>
         )
 }
 
