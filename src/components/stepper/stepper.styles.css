@@ -84,11 +84,12 @@ justify-content: space-between;
 .step-description{}
 
 .step-number-active{
-    background-color: #86fad0;
+    background: linear-gradient(to right, #4dcba5 0%, #5debab 100%);
     color: #fff;
 }
 .step-divider-active{
-    background-color: #86fad0;
+    /* background-color: #36e6c0 */
+    background: linear-gradient(to right, #4dcba5 0%, #5debab 100%);
 }
 .step-description-active{}
 
