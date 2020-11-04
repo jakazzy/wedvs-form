@@ -7,7 +7,7 @@ const PageTemplate = (props) => {
     return (
         <Card 
         className="shadow-lg" 
-        style={{ width: "50vw", height: "72vh", margin: "8rem auto"}} 
+        style={{ width: "50vw", height: "72vh", margin: "8rem auto", borderRadius: '0.5rem'}} 
         key={props.userData.step} 
         step={props.userData.step}>
             <Card.Header as="h5">Featured</Card.Header>
