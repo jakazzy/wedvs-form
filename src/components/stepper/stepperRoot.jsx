@@ -2,10 +2,10 @@ import React from 'react';
 import Stepper from './stepper.component';
 import './stepper.styles.css'
 
-const Root = () => {
+const Root = ({step }) => {
     return (
         <div className="stepper-container">
-            <Stepper/>
+            <Stepper currentStep={step}/>
         </div>
     )
 }
