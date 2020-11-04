@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Root from "./stepper/stepperRoot";
+import ChatIcon from './chat_icon/chat_icon.component'
 
 
 const PageTemplate = (props) => {
@@ -7,10 +8,10 @@ const PageTemplate = (props) => {
     return (
         <Card 
         className="shadow-lg" 
-        style={{ width: "50vw", height: "72vh", margin: "8rem auto", borderRadius: '0.5rem'}} 
+        style={{ width: "50vw", height: "72vh", margin: "8rem auto", borderRadius: '0.5rem', position: 'relative'}} 
         key={props.userData.step} 
         step={props.userData.step}>
-            <Card.Header as="h5">Featured</Card.Header>
+            <div style={{ position: 'absolute', top: "-2rem", left: "22rem"}}><ChatIcon /></div>
             <Root key={ props.userData.step }
             step={props.userData.step}
             />
