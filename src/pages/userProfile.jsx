@@ -69,7 +69,7 @@ const UserProfile =({next, userData, submitData}) =>{
                 <p className="error-message">{errors.email.message}</p>
                 )}
             </Form.Group>
-            <FormButton/>
+            <FormButton>Next</FormButton>
         </Form>
       </PageTemplate>
     
