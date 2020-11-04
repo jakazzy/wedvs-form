@@ -8,7 +8,7 @@ const FormButton = (props) => {
             className="text-center"  
             type="submit" 
             style={{ 
-                width: '9rem',
+                width: '10rem',
                 height: '3rem',
                 borderRadius: '2rem', 
                 background: 'linear-gradient(to right, #065fea 0%, #07adf4 100%)'}}>

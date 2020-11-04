@@ -1,11 +1,11 @@
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import FormButton from "../components/button.component";
 import PageTemplate from '../components/page_template.component';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import swal from 'sweetalert';
+
 
 
 function UserExperience({next, previous, submitData, userData}) {
@@ -29,10 +29,10 @@ function UserExperience({next, previous, submitData, userData}) {
     //     next();
     //    }
 
-       const goBack=(e)=>{
-        e.preventDefault();
-        previous();
-       }
+    //    const goBack=(e)=>{
+    //     e.preventDefault();
+    //     previous();
+    //    }
 
     const onSubmit = data => {
         console.log( 
@@ -40,11 +40,7 @@ function UserExperience({next, previous, submitData, userData}) {
           'what is happening now'
         )
         submitData(data)
-        swal({
-            title: "You are awesome!",
-            text: "Form has been successfully submitted!",
-            icon: "success",
-          });
+        next()
     }
 
     return (
@@ -84,8 +80,8 @@ function UserExperience({next, previous, submitData, userData}) {
                     )}
                 </Form.Group>
                 
-                <Button variant="primary" onClick={goBack }>Previous</Button>
-                <FormButton>Confirm and Save</FormButton>
+                {/* <Button variant="primary" onClick={goBack }>Previous</Button> */}
+                <FormButton>Next</FormButton>
             </Form>
        </PageTemplate>
         )

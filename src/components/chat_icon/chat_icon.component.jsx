@@ -9,7 +9,8 @@ const ChatIcon = () => {
                     top: '1rem',
                     left: '2rem',
                     fontSize: '1.5rem',
-                    color: 'grey'}}>we
+                    fontWeight:'bold',
+                    color: '#bdbdbd'}}>we
             <span style={{ fontWeight: 'bold', color: 'grey'}}>Forms</span>
             </span>
         </div>

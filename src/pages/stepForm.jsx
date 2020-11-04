@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import UserConfirmationData from './userConfirmationData';
+import UserPortfolio from './userPortfolio'
 import UserExperience from './userExperience';
 import UserProfile from './userProfile';
 import UserAddress from './userAddress';
@@ -51,7 +51,7 @@ function StepForm() {
         case 3:
             return(<UserExperience next={next} previous={previous} submitData={submitData} userData={userData} />)
         case 4:
-            return(<UserConfirmationData previous={previous} submitData={submitData} userData={userData} />);
+            return(<UserPortfolio previous={previous} submitData={submitData} userData={userData} />);
         default:
             return (
                 <UserProfile next={next}  submitData={submitData} userData={userData}/>
