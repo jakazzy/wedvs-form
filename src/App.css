@@ -4,3 +4,7 @@ body{
   background: linear-gradient(to right, #2ecdd9 0%, #70df93 100%);
   overflow: hidden;
 }
+
+.error-message{
+  color: rgb(255, 0, 212);
+}

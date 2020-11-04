@@ -7,7 +7,7 @@ import UserAddress from './userAddress';
 function StepForm() {
     const [ userData, setUserData ] =  useState({
         username: '',
-        contact: '',
+        password: '',
         emailAddress: '',
         residentialAddress: '',
         postalAddress: '',
