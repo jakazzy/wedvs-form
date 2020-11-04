@@ -11,7 +11,8 @@ const PageTemplate = (props) => {
         style={{ width: "50vw", height: "72vh", margin: "8rem auto", borderRadius: '0.5rem', position: 'relative'}} 
         key={props.userData.step} 
         step={props.userData.step}>
-            <div style={{ position: 'absolute', top: "-2rem", left: "22rem"}}><ChatIcon /></div>
+            <div className="chat-container" 
+            ><ChatIcon /></div>
             <Root key={ props.userData.step }
             step={props.userData.step}
             />

@@ -1,10 +1,41 @@
-body{
-  width: 100vw;
-  height: 100vh;
+html,body{
+  height: 100%;
+  width: 100%;
   background: linear-gradient(to right, #2ecdd9 0%, #70df93 100%);
   overflow: hidden;
 }
 
 .error-message{
   color: rgb(255, 0, 212);
+}
+
+form{
+  padding: 0px 5rem 5rem 5rem;
+}
+
+.chat-container{
+  position: absolute; 
+  top: -2rem; 
+  left: 22rem
+}
+
+@media only screen and (max-width: 1000px){
+form{
+  padding: 0px;
+}
+
+.card{
+  width: 84vw !important ;
+}
+
+.chat-container{
+  left: 9rem ;
+}
+
+}
+
+@media only screen and (max-width: 370px){
+  .chat-container{
+    left: 4rem !important ;
+  }
 }

@@ -46,7 +46,8 @@ function UserExperience({next, previous, submitData, userData}) {
     return (
        <PageTemplate userData={userData}>
            <Form onSubmit={handleSubmit(onSubmit)}
-            style={{  padding: '0 5rem 5rem 5rem' }}>
+            // style={{  padding: '0 5rem 5rem 5rem' }}
+            >
                 <Form.Group controlId="experience">
                     <Form.Label>Years of Software Experience</Form.Label>
                     <Form.Control 
