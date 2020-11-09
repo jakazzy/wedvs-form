@@ -1,10 +1,10 @@
 #chat-btn {
-    width: 10rem;
+    width: 13rem;
     height: 4rem;
-    background-color:#fdfdfd;
+    background-color:#fff;
     border-radius: 3rem;
     position: relative;
-    box-shadow: 0 0 13px #333;
+    box-shadow: 0 0 10px#737171;
   }
   #chat-btn:after {
     content: "";
@@ -12,10 +12,10 @@
     position: absolute;
     width: 0;
     height: 0;
-    right: 71px;
+    right: 92px;
     bottom: -10px;
     border-left: 10px solid transparent;
     border-right: 2px solid transparent;
-      border-top: 10px solid#F5FFFA;
-      /* box-shadow: 0 0 13px #333; */
+      border-top: 13px solid#F5FFFA;
+      /* box-shadow: 0 0 13px #333 inset; */
   }

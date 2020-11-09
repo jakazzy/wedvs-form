@@ -7,7 +7,7 @@ const ChatIcon = () => {
             <span 
             style={{ position: 'absolute',  
                     top: '1rem',
-                    left: '2rem',
+                    left: '3rem',
                     fontSize: '1.5rem',
                     fontWeight:'bold',
                     color: '#bdbdbd'}}>we

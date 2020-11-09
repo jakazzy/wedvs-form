@@ -7,3 +7,7 @@ function App() {
 }
 
 export default App;
+
+// logo skewed to the right
+// shadow is too dark and increas the radius
+// form margin between it and the bottom of the screen
