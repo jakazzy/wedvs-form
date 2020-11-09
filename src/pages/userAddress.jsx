@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import PageTemplate from '../components/page_template.component';
 import FormButton from '../components/button.component';
@@ -29,18 +28,15 @@ const  UserAddress =({ next, previous, submitData, userData})=> {
     //    }
 
     const onSubmit = data => {
-        console.log( 
-          data,
-          'what is happening now'
-        )
+        
         submitData(data)
         next()
     }
 
-       const goBack=(e)=>{
-        e.preventDefault();
-        previous();
-       }
+    //    const goBack=(e)=>{
+    //     e.preventDefault();
+    //     previous();
+    //    }
     return (
         <PageTemplate userData= {userData}>
             <Form onSubmit={handleSubmit(onSubmit)}
@@ -86,7 +82,7 @@ const  UserAddress =({ next, previous, submitData, userData})=> {
                     )}
                 </Form.Group>
                 
-                <Button variant="primary" onClick={goBack }>Previous</Button>
+                {/* <Button variant="primary" onClick={goBack }>Previous</Button> */}
                 <FormButton>Next</FormButton>
             </Form>
         </PageTemplate>

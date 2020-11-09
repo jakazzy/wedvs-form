@@ -4,7 +4,6 @@ import ChatIcon from './chat_icon/chat_icon.component'
 
 
 const PageTemplate = (props) => {
-    console.log(props.userData.step);
     return (
         <Card 
         className="shadow-lg" 

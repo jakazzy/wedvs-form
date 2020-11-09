@@ -35,10 +35,7 @@ function UserExperience({next, previous, submitData, userData}) {
     //    }
 
     const onSubmit = data => {
-        console.log( 
-          data,
-          'what is happening now'
-        )
+
         submitData(data)
         next()
     }

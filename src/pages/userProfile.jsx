@@ -24,10 +24,6 @@ const UserProfile =({next, userData, submitData}) =>{
 
 
    const onSubmit = data => {
-    console.log( 
-      data,
-      'what is happening now'
-    )
     submitData(data)
     next()
 }

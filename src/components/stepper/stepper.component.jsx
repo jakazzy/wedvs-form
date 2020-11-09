@@ -13,7 +13,6 @@ const stepsDescription = [
 
     const steps= stepsDescription.map((stepper, index)=>{
         // if(stepper.step <= currentStep){stepper.selected =}
-        console.log(currentStep, 'currentStep');
         const divType = index ===stepsDescription.length -1? "last-divider":"divider-line"
         const divState = stepper.step < currentStep? 'step-divider-active': ''
 
