@@ -27,7 +27,7 @@ form{
 }
 
 .card{
-  min-width: 84vw !important ;
+  width: 84vw !important ;
 }
 
 .chat-container{

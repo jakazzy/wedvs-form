@@ -8,7 +8,7 @@ const PageTemplate = (props) => {
     return (
         <Card 
         className="shadow-lg" 
-        style={{ width: "50vw", height: "72vh", margin: "8rem auto", borderRadius: '0.5rem', position: 'relative'}} 
+        style={{ width: "50vw", minHeight: "72vh", margin: "8rem auto", borderRadius: '0.5rem', position: 'relative'}} 
         key={props.userData.step} 
         step={props.userData.step}>
             <div className="chat-container" 
