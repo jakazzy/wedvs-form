@@ -1,6 +1,4 @@
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -39,9 +37,8 @@ const UserProfile =({next, userData, submitData}) =>{
         <Form onSubmit= { handleSubmit(onSubmit)} 
         // style={{  padding: '0 5rem 5rem 5rem' }}
          >
-            <Form.Group as={Row} controlId="username">
-                <Form.Label  sm={12}>Username</Form.Label>
-                <Col xs={12}>
+            <Form.Group  controlId="username">
+                <Form.Label  >Username</Form.Label>
                 
                 <Form.Control 
                 type="text" 
@@ -51,7 +48,7 @@ const UserProfile =({next, userData, submitData}) =>{
                 {errors.username && (
                 <p className="error-message">{errors.username.message}</p>
                 )}
-                </Col>
+               
             </Form.Group>
 
             <Form.Group controlId="password">
